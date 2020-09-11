@@ -36,10 +36,6 @@ if(args.length == 3) {
   timeStamps.reverse()
   timeStamps.sort()
   
-  // timecompetition.subtract(, 'minutes').format("[bicarbonaat -] H:m")
-  // const bicarbonaat_2 = competitionStart.subtract(, 'minutes').format("[bicarbonaat -] H:m")
-  // const bicarbonaat_1 = competitionStart.subtract(, 'minutes').format("[bicarbonaat -] H:m")
- 
   timeStamps.forEach(timeStamp => {
     console.log(timeStamp)
   })
