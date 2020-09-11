@@ -3,8 +3,16 @@
   "version": "1.0.0",
   "description": "Personal schedule calculator for my track competitions",
   "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JoggJogg/comp_schedule.git"
+  },
+  "homepage": "https://github.com/JoggJogg/comp_schedule#readme",
+  "bugs": {
+    "url": "https://github.com/JoggJogg/comp_schedule/issues"
+  },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node index.js"
   },
   "keywords": [
     "NodeJS",
@@ -14,5 +22,8 @@
     "Line"
   ],
   "author": "Jochem Dobber",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "moment": "^2.27.0"
+  }
 }
