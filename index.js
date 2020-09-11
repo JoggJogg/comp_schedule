@@ -15,6 +15,12 @@ if(args.length == 3) {
   let callRoomMoment = moment(args[0], 'H-m').subtract(callRoom, 'minutes')
   timeStamps.push(callRoomMoment.format("HH:mm [- callroom ]"))
 
+  let longRunMoment = callRoomMoment.subtract(10, 'minutes')
+  timeStamps.push(longRunMoment.format("HH:mm [- longrun]"))
+
+  let spikesMoment = longRunMoment.subtract(15, 'minutes')
+  timeStamps.push(spikesMoment.format("HH:mm [- spikes]"))
+
   let caffeineMoment = moment(args[0], 'H-m').subtract(45, 'minutes')
   timeStamps.push(caffeineMoment.format("HH:mm [- caffeine]"))
 
